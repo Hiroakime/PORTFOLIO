@@ -1,15 +1,15 @@
-﻿:root {
-  color-scheme: dark;
-  --blue: #1e3a8a;
-  --blue-soft: #3b82f6;
-  --blue-light: #dbeafe;
-  --nav: #0f172a;
-  --card: rgba(255, 255, 255, 0.08);
-  --card-strong: rgba(255, 255, 255, 0.12);
-  --text: #e2e8f0;
-  --text-muted: #94a3b8;
-  --border: rgba(148, 163, 184, 0.18);
-  --shadow: 0 28px 90px rgba(15, 23, 42, 0.2);
+:root {
+  color-scheme: light;
+  --blue: #8b5e3c;
+  --blue-soft: #c9965a;
+  --blue-light: #f7ebdb;
+  --nav: #4a3420;
+  --card: rgba(178, 133, 86, 0.94);
+  --card-strong: rgba(139, 94, 60, 0.96);
+  --text: #1f1203;
+  --text-muted: #4a3219;
+  --border: rgba(122, 97, 71, 0.18);
+  --shadow: 0 28px 90px rgba(74, 52, 32, 0.12);
   --radius: 28px;
 }
 
@@ -25,9 +25,9 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.24), transparent 35%),
-    radial-gradient(circle at right, rgba(59, 130, 246, 0.14), transparent 30%),
-    linear-gradient(180deg, #020617 0%, #071126 55%, #0b1530 100%);
+  background: radial-gradient(circle at top left, rgba(201, 150, 90, 0.24), transparent 35%),
+    radial-gradient(circle at right, rgba(139, 94, 60, 0.16), transparent 30%),
+    linear-gradient(180deg, #fcf5ea 0%, #f5e7d1 55%, #e7c79b 100%);
   color: var(--text);
 }
 
@@ -52,8 +52,8 @@ textarea {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(18px);
-  background: rgba(3, 20, 42, 0.82);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(74, 52, 32, 0.84);
+  border-bottom: 1px solid rgba(122, 97, 71, 0.16);
 }
 
 .header-inner {
@@ -65,7 +65,7 @@ textarea {
 }
 
 .brand {
-  color: white;
+  color: #fffaf2;
   font-size: 1.35rem;
   font-weight: 700;
   text-decoration: none;
@@ -82,13 +82,13 @@ textarea {
 }
 
 .nav-links a {
-  color: var(--text-muted);
+  color: var(--text);
   text-decoration: none;
   transition: color 0.25s ease;
 }
 
 .nav-links a:hover {
-  color: white;
+  color: #fffaf2;
 }
 
 .hero-section {
@@ -123,7 +123,7 @@ textarea {
 .contact-card p,
 .feedback-box p {
   line-height: 1.75;
-  color: var(--text-muted);
+  color: var(--text);
 }
 
 .hero-actions {
@@ -151,14 +151,15 @@ textarea {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--blue-soft), #2563eb);
-  color: white;
-  box-shadow: 0 18px 30px rgba(59, 130, 246, 0.25);
+  background: linear-gradient(135deg, var(--blue-soft), var(--blue));
+  color: #fffaf2;
+  box-shadow: 0 18px 30px rgba(139, 94, 60, 0.2);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.08);
-  color: white;
+  background: rgba(178, 133, 86, 0.95);
+  color: var(--text);
+  border-color: rgba(122, 97, 71, 0.2);
 }
 
 .hero-panel {
@@ -170,8 +171,8 @@ textarea {
   width: 100%;
   padding: 2rem;
   border-radius: 32px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: var(--card);
+  border: 1px solid rgba(122, 97, 71, 0.16);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
 }
@@ -180,8 +181,8 @@ textarea {
   display: inline-flex;
   padding: 0.5rem 1rem;
   border-radius: 999px;
-  background: rgba(59, 130, 246, 0.16);
-  color: var(--blue-soft);
+  background: rgba(201, 150, 90, 0.16);
+  color: #3b2b12;
   font-size: 0.85rem;
   margin-bottom: 1rem;
 }
@@ -231,8 +232,8 @@ textarea {
 .about-list li {
   padding: 1rem 1.25rem;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(178, 133, 86, 0.14);
+  border: 1px solid rgba(122, 97, 71, 0.16);
   list-style: none;
 }
 
@@ -241,8 +242,8 @@ textarea {
   gap: 1.5rem;
   padding: 2rem;
   border-radius: 32px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: rgba(214, 174, 121, 0.92);
+  border: 1px solid rgba(122, 97, 71, 0.16);
   box-shadow: var(--shadow);
 }
 
@@ -251,7 +252,7 @@ textarea {
   min-height: 280px;
   border-radius: 28px;
   overflow: hidden;
-  background: linear-gradient(180deg, #1d4ed8 0%, #2563eb 100%);
+  background: linear-gradient(180deg, #c9965a 0%, #8b5e3c 100%);
 }
 
 .about-photo {
@@ -264,7 +265,7 @@ textarea {
 .about-details span {
   display: inline-block;
   margin-bottom: 0.85rem;
-  color: var(--blue-soft);
+  color: #3b2b12;
 }
 
 .about-details p {
@@ -290,29 +291,30 @@ textarea {
 .work-card {
   padding: 2rem;
   border-radius: 28px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.12);
+  background: rgba(214, 174, 121, 0.92);
+  border: 1px solid rgba(122, 97, 71, 0.16);
+  box-shadow: 0 16px 35px rgba(74, 52, 32, 0.12);
 }
 
 .project-badge {
   display: inline-flex;
   padding: 0.55rem 0.85rem;
   border-radius: 999px;
-  background: rgba(59, 130, 246, 0.12);
-  color: var(--blue-soft);
+  background: rgba(201, 150, 90, 0.18);
+  color: #3b2b12;
   font-size: 0.85rem;
   margin-bottom: 1rem;
 }
 
 .work-card h3 {
   margin: 0 0 1rem;
+  color: #1f1203;
 }
 
 .work-card p {
   margin: 0;
   line-height: 1.8;
-  color: var(--text-muted);
+  color: var(--text);
 }
 
 .contact-info {
@@ -324,8 +326,8 @@ textarea {
 .contact-info div {
   padding: 1rem 1.2rem;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(178, 133, 86, 0.22);
+  border: 1px solid rgba(122, 97, 71, 0.18);
 }
 
 .contact-info strong {
@@ -335,7 +337,7 @@ textarea {
 
 .contact-info a,
 .contact-info span {
-  color: var(--text-muted);
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -347,8 +349,8 @@ textarea {
 .contact-card {
   padding: 2rem;
   border-radius: 32px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: rgba(214, 174, 121, 0.92);
+  border: 1px solid rgba(122, 97, 71, 0.16);
   box-shadow: var(--shadow);
 }
 
@@ -357,8 +359,8 @@ textarea {
   min-height: 180px;
   border-radius: 24px;
   overflow: hidden;
-  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.4), transparent 35%),
-    linear-gradient(180deg, rgba(59, 130, 246, 0.85), rgba(15, 23, 42, 0.95));
+  background: radial-gradient(circle at top left, rgba(201, 150, 90, 0.35), transparent 35%),
+    linear-gradient(180deg, rgba(201, 150, 90, 0.9), rgba(74, 52, 32, 0.95));
 }
 
 .contact-image {
@@ -377,14 +379,14 @@ textarea {
   gap: 1rem;
   padding: 2rem;
   border-radius: 32px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(214, 174, 121, 0.92);
+  border: 1px solid rgba(122, 97, 71, 0.16);
   box-shadow: var(--shadow);
 }
 
 .feedback-box label {
   font-weight: 600;
-  color: white;
+  color: var(--text);
 }
 
 .feedback-box textarea {
@@ -401,12 +403,12 @@ textarea {
 .feedback-box textarea:focus,
 input:focus {
   outline: none;
-  border-color: rgba(59, 130, 246, 0.55);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  border-color: rgba(139, 94, 60, 0.55);
+  box-shadow: 0 0 0 3px rgba(201, 150, 90, 0.2);
 }
 
 .feedback-note {
-  color: var(--text-muted);
+  color: var(--text);
 }
 
 .feedback-note a {
@@ -425,7 +427,7 @@ input:focus {
 .footer-inner {
   display: flex;
   justify-content: center;
-  color: var(--text-muted);
+  color: var(--text);
 }
 
 @media (max-width: 940px) {
